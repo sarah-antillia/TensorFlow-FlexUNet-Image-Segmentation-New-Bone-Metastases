@@ -16,9 +16,6 @@
 # 2025/08/27
 
 
-# into test, train and valid dataset.
-
-
 import os
 import sys
 import glob
@@ -67,10 +64,9 @@ def copy(image_files, masks_dir, dataset_dir):
     out_image_filepath = os.path.join(out_images_dir, png_name)
     cv2.imwrite(out_image_filepath, image)
 
-    #shutil.copy2(image_file, out_images_dir)
     print("Copied {} to {}".format(image_file, out_images_dir))
 
-    mask_file = os.path.join(masks_dir, basename )
+    mask_file = image_file.replace("/images/", "/masks")
     mask = cv2.imread(mask_file)
 
     out_mask_filepath = os.path.join(out_masks_dir, png_name)
