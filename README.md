@@ -1,4 +1,6 @@
 <h2>TensorFlow-FlexUNet-Image-Segmentation-New-Bone-Metastases (2025/08/28)</h2>
+<li>2025/08/28: Fixed a bug in <a href="./generator/split_master.py">spit_master.py</a></li>
+<br>
 This is the first experiment of Image Segmentation for New-Bone-Metastases (NBM) based on 
   <a href="https://github.com/sarah-antillia/TensorFlow-FlexUNet-Image-Segmentation-Model">
 <b>TensorFlowFlexUNet (TensorFlow Flexible UNet Image Segmentation Model for Multiclass)</b></a>
